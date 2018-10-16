@@ -9,13 +9,12 @@ public class MorseTest extends TestCase {
 
 	@Test
 	public void test1() throws Exception {
-		Morse morse = new Morse();
-		assertEquals("WILD", morse.convert(".-- .. .-.. -.."));
+		assertEquals("WILD", Morse.convert(".-- .. .-.. -.."));
 	}
 	
 	@Test
 	public void test2() throws Exception {
 		Morse morse = new Morse();
-		assertEquals("WILD CODE", morse.convert(".-- .. .-.. -..   -.-. --- -.. ."));
+		assertEquals("WILD CODE", Morse.convert(".-- .. .-.. -..   -.-. --- -.. ."));
 	}
 }
